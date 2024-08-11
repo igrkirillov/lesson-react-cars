@@ -14,7 +14,7 @@ export default function App() {
   )
 }
 
-export function Layout(props) {
+export function Layout() {
     return (
         <div className="layout">
             <Menu></Menu>
@@ -23,11 +23,7 @@ export function Layout(props) {
     )
 }
 
-type MenuProps = {
-
-}
-
-function Menu(props: MenuProps) {
+function Menu() {
     const className = ({isActive} : {isActive: boolean}) => {
         return isActive ? "menu__item menu__item-active" : "menu__item";
     }
@@ -41,25 +37,25 @@ function Menu(props: MenuProps) {
     )
 }
 
-function Home(props) {
+function Home() {
     return (
         <div>Главная</div>
     )
 }
 
-function Drift(props) {
+function Drift() {
     return (
         <div>Дрифт-такси</div>
     )
 }
 
-function Timeattack(props) {
+function Timeattack() {
     return (
         <div>Time Attack</div>
     )
 }
 
-function Forza(props) {
+function Forza() {
     return (
         <div>Forza Karting</div>
     )
